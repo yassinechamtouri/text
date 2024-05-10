@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="A.css">
+</head>
+<body>
+    <div class="container">
+        <h1>inscription étudiant</h1>
+        <form action="#" method="post">
+            <label for="nom">Nom d'étudiant :</label>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="prenom">Prénom d'étudiant : </label>
+            <input type="text" id="prenom" name="prenom" required><br>
+            <label for="email">Email d'étudiant :</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="nom">N° d'étudiant :</label>
+            <input type="text" id="n" name="n" required><br>
+            <label for="sexe">Sexe:</label><br>
+            <input type="radio" id="masculin" name="sexe" value="masculin" required>
+            <label for="masculin">Masculin</label>
+            <input type="radio" id="feminin" name="sexe" value="feminin" required>
+            <label for="feminin">Féminin</label><br>
+            <label for="dateNaissance">Date Naissance :</label>
+            <input type="date" id="dateNaissance" name="dateNaissance" required><br>
+            <label for="photo">Photo d'étudiant :</label>
+            <input type="file" id="photo" name="photo"><br>
+            <label for="pays">pays</label>
+            <select id="country" name="country">
+                <option value="Tunisie">Tunisie</option>
+                <option value="algeri">algeri</option>
+                <option value="egpte">egpte</option>
+                <option value="moritani">moritani</option>
+            </select><br>
+            <label for="langages">Langages préférés:</label>
+            <select id="langages" name="langages" multiple required>
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="cplusplus">C++</option>
+                <option value="php">PHP</option>
+            </select><br>
+            <label for="activites">Domaines d'activités:</label>
+            <input type="checkbox" id="a">Informatique<input type="checkbox" id="a">Gestion<input type="checkbox" id="a">Pédagogie <br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </form>
+    </div>
+</body>
+</html>
